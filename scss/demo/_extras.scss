@@ -1,0 +1,28 @@
+/* ----------------------------------------------------------------
+	Extra Styles
+-----------------------------------------------------------------*/
+.container-fluid {
+	overflow: hidden;
+}
+
+.slick-slide {
+	margin: 0.5rem;
+	height: auto;
+}
+
+.arrows {
+	a {
+		font-size: 2.25rem;
+		color: #cccccc;
+
+		&:hover {
+			color: $theme-color;
+		}
+	}
+}
+
+#map {
+	img {
+		height: 50rem;
+	}
+}

@@ -1,0 +1,8 @@
+#contact {
+    @include media-breakpoint-up(lg) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+}

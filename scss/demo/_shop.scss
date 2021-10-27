@@ -1,0 +1,180 @@
+
+/* ----------------------------------------------------------------
+
+	shop.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Shop
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for shop pages. Thanks!
+-----------------------------------------------------------------*/
+
+/* Product
+-----------------------------------------------------------------*/
+.product {
+	position: relative;
+	margin-bottom: 0.875rem;
+
+	.product-image {
+		position: relative;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	.product-details {
+		position: relative;
+		padding: 1rem 0;
+		z-index: 1;
+	}
+
+	.product-title {
+		font-size: 1.25rem;
+	}
+
+	.product-price {
+		font-family: $heading-font;
+		font-weight: 600;
+		font-size: 0.875rem;
+		color: $theme-color;
+
+		del {
+			font-weight: 400;
+			font-size: 0.75rem;
+			color: #7e7e7e;
+			margin-left: 0.5rem;
+		}
+	}
+
+	.product-info {
+		a {
+			font-family: $heading-font;
+			color: #999999;
+			font-weight: 500;
+		}
+	}
+
+	.product-rating {
+		font-family: $heading-font;
+		font-size: 0.875rem;
+		color: #b3b2b0;
+		
+		span {
+			font-weight: 500;
+			color: #ff9106;
+		}
+
+		i {
+			color: #ff9106;
+			font-size: 0.75rem;
+
+			&.empty {
+				color: rgba(#ff9106, 0.5);
+			}
+		}
+	}
+
+	.product-btn {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		opacity: 0;
+
+		@include transition(all 0.5s ease-in-out);
+	}
+
+
+	.add-to-wishlist {
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+		color: #8e8e8e;
+	}
+
+	.add-to-cart {
+		text-transform: uppercase;
+		color: $white;	
+	}
+
+	&:hover {
+		.product-btn {
+			opacity: 1;
+		}
+	}
+}
+
+.onsale, .onnew {
+	font-family: $heading-font;
+	font-weight: 500;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+.onsale {
+	color: $danger;
+}
+
+.onnew {
+	color: $dark;
+}
+
+.ads {
+    position: relative;
+    display: block;
+	margin-bottom: 1.5rem;
+
+    .ads-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        .ads-bg-img {
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .ads-body {
+        position: relative;
+        z-index: 1;
+    }
+
+	&.ads1 {
+		.ads-body {
+			padding: 4rem 2rem 8rem;
+
+			h6 {
+				color: #808080;
+			}
+		}
+	}
+
+	&.ads2 {
+		.ads-body {
+			padding: 6rem 4rem 10rem;
+		}
+	}
+}
